@@ -48,7 +48,7 @@ const Exposures = () => {
 	useEffect(() => {
 		if (selectedPlayers.length > 0) {
 			axios
-				.post('http://127.0.0.1:5000/filter-teams', {
+				.post('https://bestball-api.vercel.app/filter-teams', {
 					players: selectedPlayers,
 				})
 				.then((response) => {
