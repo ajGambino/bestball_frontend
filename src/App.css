@@ -27,3 +27,24 @@
 .exposures tr:nth-child(even) {
 	background-color: #f9f9f9;
 }
+
+/* Teams */
+
+.team button {
+	margin: 5px;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+.team button[disabled] {
+	opacity: 0.5;
+	cursor: not-allowed;
+}
+
+.team button.active {
+	font-weight: bold;
+}
+
+.team table {
+	margin: 0 auto;
+}
