@@ -7,11 +7,11 @@ const Navbar = () => {
 			<ul className='navbar-list'>
 				<li className='navbar-item'>
 					<Link to='/teams' className='navbar-link'>
-						Teams
+						All Teams
 					</Link>
 				</li>
 				<li className='navbar-item'>
-					<Link to='/exposures' className='navbar-link'>
+					<Link to='/' className='navbar-link'>
 						Exposures
 					</Link>
 				</li>
