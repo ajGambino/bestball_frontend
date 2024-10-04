@@ -77,3 +77,9 @@
 .navbar-link:hover {
 	text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+	.exposures table {
+		font-size: 0.9rem;
+	}
+}
