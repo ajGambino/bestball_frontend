@@ -1,13 +1,21 @@
 import './App.css';
-import Teams from './components/Teams';
-import Exposures from './components/Exposures';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar'; // Import the Navbar component
+import Teams from './components/Teams'; // Import your Teams component
+import Exposures from './components/Exposures'; // Import your Exposures component
 
 function App() {
 	return (
-		<div className='App'>
-			<Teams />
-			<Exposures />
-		</div>
+		<Router>
+			<Navbar />
+			<div className='App'>
+				<Routes>
+					<Route path='/teams' element={<Teams />} />
+					<Route path='/exposures' element={<Exposures />} />
+				</Routes>
+			</div>
+		</Router>
 	);
 }
 
