@@ -11,7 +11,7 @@ const Teams = () => {
 	useEffect(() => {
 		setLoading(true);
 		axios
-			.get(`http://127.0.0.1:5000/lineups/${teamNumber}`) // change to  backend URL
+			.get(`https://bestball-api.vercel.app/lineups/${teamNumber}`) // change to  backend URL
 			.then((response) => {
 				setTeam(response.data);
 				setLoading(false);

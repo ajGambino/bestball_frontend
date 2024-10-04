@@ -15,7 +15,7 @@ const Exposures = () => {
 
 	useEffect(() => {
 		axios
-			.get('http://127.0.0.1:5000/players') // change this to backend URL
+			.get('https://bestball-api.vercel.app/players') // change this to backend URL
 			.then((response) => {
 				let sortedPlayers = response.data.sort((a, b) => {
 					const exposureA = parseFloat(a.exposure.replace('%', ''));
