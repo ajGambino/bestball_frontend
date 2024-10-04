@@ -1,9 +1,9 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar'; // Import the Navbar component
-import Teams from './components/Teams'; // Import your Teams component
-import Exposures from './components/Exposures'; // Import your Exposures component
+import Navbar from './components/Navbar';
+import Teams from './components/Teams';
+import Exposures from './components/Exposures';
 
 function App() {
 	return (
